@@ -13,13 +13,13 @@ const ShoppingList = ({ items }) => {
     return (
         <div>
             <h2>My shopping list:</h2>
-            {items.length === 0 ? (
+            if(!items.length === 0){
                 <p>Список покупок пуст</p>
-            ) : (
-                <ul>
-                    {items.map((item, index) => <li key={index}>{item}</li>)}
-                </ul>
-            )}
+            }
+
+            <ul>
+                {items.map((item, index) => <li key={index}>{item}</li>)}
+            </ul>
         </div>
     );
 }
