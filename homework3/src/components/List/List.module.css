@@ -1,27 +1,27 @@
-.list-box {
+.listBox {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-.list-people {
+.listPeople {
     font-size: 16px;
     width: 300px;
 }
 
-.li-box {
+.liBox {
     padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
 }
 
-.person-info {
+.personInfo {
     display: flex;
     align-items: center;
 }
 
-.button-box {
+.buttonBox {
     padding: 4px 14px;
     font-size: 14px;
     cursor: pointer;
@@ -30,7 +30,7 @@
     border: 1px solid gray;
 }
 
-.button-box:hover{
+.buttonBox:hover{
     background-color: rgb(206, 108, 108);
     border: 1px solid transparent;
     color: #fff;

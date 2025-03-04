@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import './List.css'
+import styles from './List.module.css'
 
 const People = () => {
     const [people, setPeople] = useState([
@@ -30,16 +30,16 @@ const People = () => {
     }
 
     return (
-        <div className="list-box">
+        <div className={styles.listBox}>
             <h2>Список приглашенных:</h2>
-            <ol className="list-people">
+            <ol className={styles.listPeople}>
                 {people.map((person) => (
                     <li key={person.id}>
-                        <div className="li-box">
-                            <div className="person-info">
+                        <div className={styles.liBox}>
+                            <div className={styles.personInfo}>
                                 {person.name} ({person.age} лет)
                             </div>
-                            <button className="button-box" onClick={() => deletePerson(person.id)}>Удалить</button>
+                            <button className={styles.buttonBox} onClick={() => deletePerson(person.id)}>Удалить</button>
                         </div>
                     </li>
                 ))}
