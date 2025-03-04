@@ -1,4 +1,4 @@
-import ratingList from "../App/ratingList";
+import ratingList from "./ratingList";
 import { useState } from "react";
 
 import './Rating.css'
