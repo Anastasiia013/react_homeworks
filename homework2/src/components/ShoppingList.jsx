@@ -13,12 +13,15 @@ const ShoppingList = ({ items }) => {
     return (
         <div>
             <h2>My shopping list:</h2>
-            {!items.length && <p>Список покупок пуст</p>}
-            <ul>
-                {items.map((item, index) => (
-                    <li key={index}>{item}</li>
-                ))}
-            </ul>
+            {items.length > 0 ? (
+                <ul>
+                    {items.map((item, index) => (
+                        <li key={index}>{item}</li>
+                    ))}
+                </ul>
+            ) : (
+                <p>Список покупок пуст</p>
+            )}
         </div>
     );
 };
