@@ -4,14 +4,16 @@ import styles from './CitySelector.module.css'
 const CitySelector = ({ onChange }) => {
 
     return (
-        <select className={styles.selectBox} onChange={(event) => onChange(event.target.value)}>
-            <option className={styles.optionList} value="">Выберите город</option>
+        <select id="citySelect" className={styles.selectBox} onChange={(event) => onChange(event.target.value)}>
+            <option value="">Выберите город</option>
 
-            {citiesData.map((city, index) => (
-                <option key={index} value={city.name}>
-                    {city.name}
-                </option>
-            ))}
+            {citiesData.length > 0 ? (
+                citiesData.map((city, index) => (
+                    city.name ? <option key={index} value={city.name}>{city.name}</option> : null
+                ))
+            ) : (
+                <option disabled>Нет доступных городов</option>
+            )}
         </select>
     );
 }
