@@ -1,0 +1,24 @@
+.answer-form {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.answer-form input {
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.answer-form button {
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.answer-form button:hover {
+    background-color: lightgray;
+}
