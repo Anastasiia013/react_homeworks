@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+}
+
+.spotifyLogo {
+    margin: 55px 35px;
+}
+
+@media (max-width: 999px) {
+    .spotifyLogo {
+        margin: 20px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .spotifyLogo {
+        margin: 10px;
+        width: 60px;
+    }
+}

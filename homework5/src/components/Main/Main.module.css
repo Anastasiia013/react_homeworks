@@ -1,0 +1,46 @@
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: default;
+    width: 80%;
+    padding: 20px 0px;
+}
+
+.mainText {
+    font-size: 32px;
+    font-weight: 700;
+    width: 170px;
+    text-align: center;
+    cursor: default;
+}
+
+@media (max-width: 999px) {
+    h1 {
+        font-size: 48px; 
+    }
+
+    .mainText {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .mainText {
+        font-size: 20px;
+    }
+}
