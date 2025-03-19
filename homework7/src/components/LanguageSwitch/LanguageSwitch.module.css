@@ -2,10 +2,10 @@ select {
     padding: 10px 10px;
     width: 200px;
     font-size: 16px;
-    background-color: rgb(188, 235, 180);
+    background-color: rgba(177, 114, 236, 0.7);
     outline: none;
-    border: transparent;
-    border-radius: 10px;
+    border: 2px solid #2a1af9;
+    border-radius: 20px;
     margin-bottom: 20px;
     cursor: pointer;
 }

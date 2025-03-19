@@ -9,8 +9,8 @@ function App() {
 
   return (
     <LanguageSettingProvider>
-      <LanguageSwitch data={languageData} />
       <TextComponent />
+      <LanguageSwitch data={languageData} />
     </LanguageSettingProvider>
   )
 }

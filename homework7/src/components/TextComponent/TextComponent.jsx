@@ -6,15 +6,15 @@ const TextComponent = () => {
     const { language } = useContext(languageContext);
 
     const paragraphs = {
-        English: 'This is English', 
-        Deutsch: 'Das ist Deutsch', 
-        Russian: 'Это русский'
+        English: 'English language was chosen', 
+        Deutsch: 'Deutsche Sprache ist gewählt', 
+        Russian: 'Выбран русский язык'
     };
 
     return (
-        <div className={styles.textBox}>
+        <h2 className={styles.textBox}>
             {paragraphs[language]}
-        </div>
+        </h2>
     )
 }
 export default TextComponent;
