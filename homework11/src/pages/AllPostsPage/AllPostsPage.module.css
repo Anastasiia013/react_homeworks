@@ -1,0 +1,23 @@
+.postsList {
+    list-style: decimal;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 18px;
+    color: rgb(33, 33, 33);
+}
+
+.postLink {
+    text-decoration: none;
+    color: rgb(33, 33, 33);
+    font-size: 18px;
+}
+
+.postLink:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+.error{
+    color: red;
+}

@@ -1,0 +1,32 @@
+.navigation {
+    background-color: rgb(33, 33, 33);
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    text-transform: uppercase;
+}
+
+.navList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+    gap: 20px;
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+    line-height: 20px;
+    letter-spacing: 1px;
+    height: 100%;
+}
+
+.navLink:hover {
+    color: #f9d8dd;
+    text-decoration: underline;
+}
