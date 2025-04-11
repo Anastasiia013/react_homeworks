@@ -1,0 +1,26 @@
+.userFormField {
+    display: flex;
+}
+
+.userFormBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: chocolate;
+    color: white;
+    cursor: pointer;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
