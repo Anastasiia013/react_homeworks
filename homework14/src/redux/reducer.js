@@ -1,8 +1,8 @@
 import { SET_USER_INFO } from "./types";
 
 const initialStore = {
-    name: 'no user',
-    status: 'no status'
+    name: 'No user',
+    status: 'No status'
 };
 
 const reducer = (store = initialStore, action) => {

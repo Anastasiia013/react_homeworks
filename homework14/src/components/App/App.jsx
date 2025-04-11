@@ -10,11 +10,13 @@ import '../../styles/common.css'
 function App() {
 
   return (
-      <main>
-        <h1>User Profile</h1>
+    <main>
+      <h1>User Profile</h1>
+      <div className='appBox'>
         <User />
         <UserForm />
-      </main>
+      </div>
+    </main>
   )
 }
 
