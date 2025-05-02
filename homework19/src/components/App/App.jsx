@@ -1,18 +1,27 @@
 import { useState } from 'react';
-import { Form, Input, Button, Card, Typography } from 'antd';
+import { Form, Input, Button, Card, Typography, Alert } from 'antd';
+
+const { Title } = Typography;
 
 function App() {
-  const { Title } = Typography;
   const [formData, setFormData] = useState({ name: '', description: '' });
   const [submittedData, setSubmittedData] = useState(null);
+  const [error, setError] = useState(null);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+    setError(null);
   };
 
   const handleSubmit = () => {
+    if (!formData.name.trim() || !formData.description.trim()) {
+      setError('Пожалуйста, заполните все поля.');
+      return;
+    }
+
     setSubmittedData(formData);
+    setError(null);
   };
 
   return (
@@ -34,17 +43,20 @@ function App() {
             value={formData.description}
             onChange={handleInputChange}
             placeholder="Введите описание"
-            rules={[{ required: true, message: 'Пожалуйста, введите имя' }]}
           />
         </Form.Item>
+
+        {error && (
+          <Alert message={error} type="error" style={{ marginBottom: '16px' }} />
+        )}
 
         <Form.Item>
           <Button type="primary" onClick={handleSubmit}>
             Отправить
           </Button>
         </Form.Item>
-
       </Form>
+
       {submittedData && (
         <Card style={{ marginTop: '20px' }}>
           <Title level={4}>Отправленные данные:</Title>
