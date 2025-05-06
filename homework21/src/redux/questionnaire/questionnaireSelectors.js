@@ -1,0 +1,1 @@
+export const selectAllQuestions = (state) => state.questionnaire.questions;

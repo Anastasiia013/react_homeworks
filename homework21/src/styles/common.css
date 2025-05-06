@@ -1,0 +1,45 @@
+main {
+    padding: 10px 40px;
+    color: #383838;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+.questionBox {
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.formBox,
+.resultBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0px;
+}
+
+.submitAnswers {
+    padding: 16px 30px;
+    margin: 20px 0px;
+    background-color: blueviolet;
+    color: beige;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0px 0px 5px 3px blueviolet;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 30%;
+}
+
+.submitAnswers:hover {
+    background-color: crimson;
+    border: 1px solid crimson;
+    box-shadow: 0px 0px 5px 3px crimson;
+}
