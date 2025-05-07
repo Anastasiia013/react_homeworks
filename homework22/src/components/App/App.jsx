@@ -1,6 +1,5 @@
+import Quote from '../Quote/Quote'
 
-
-import './App.css'
 import '../../styles/reset.css'
 import '../../styles/common.css'
 
@@ -8,7 +7,8 @@ function App() {
 
   return (
     <>
-
+      <h1>Your random quote:</h1>
+      <Quote />
     </>
   )
 }
