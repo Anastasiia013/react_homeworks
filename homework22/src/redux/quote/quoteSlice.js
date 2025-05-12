@@ -24,8 +24,8 @@ const quoteSlice = createSlice({
         builder
             .addCase(getRandomQuote.pending, pending)
             .addCase(getRandomQuote.fulfilled, (store, { payload }) => {
-                store.quote = payload.quote;
-                store.author = payload.author;
+                store.quote = payload.q;
+                store.author = payload.a;
                 store.loading = false;
                 store.error = null;
             })

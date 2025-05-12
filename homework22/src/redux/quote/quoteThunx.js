@@ -6,7 +6,7 @@ export const getRandomQuote = createAsyncThunk(
     async (_, { rejectWithValue }) => {
         try {
             const data = await getQuoteApi();
-            return data;
+            return data.data;
         } catch (error) {
             return rejectWithValue(error?.response?.data?.message);
         }

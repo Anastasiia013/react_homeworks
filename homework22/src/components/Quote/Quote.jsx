@@ -19,7 +19,7 @@ const Quote = () => {
     }
 
     return (
-        <div>
+        <div className={styles.container}>
             {loading && <p>Loading...</p>}
             {error && <p className={styles.error}>Error: {error}</p>}
             {!loading && !error && quote && (

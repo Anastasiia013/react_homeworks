@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const backendInstance = axios.create({
-    baseURL: "https://zenquotes.io/api/random"
+    baseURL: "https://zenquotes-proxy.onrender.com/api/random"
 })
 
 export const getQuoteApi = async () => {

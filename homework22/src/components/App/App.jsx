@@ -6,10 +6,10 @@ import '../../styles/common.css'
 function App() {
 
   return (
-    <>
+    <main>
       <h1>Your random quote:</h1>
       <Quote />
-    </>
+    </main>
   )
 }
 
